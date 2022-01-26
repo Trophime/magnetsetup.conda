@@ -18,7 +18,8 @@ RUN echo $NB_USER ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$NB_USER && \
 # Seup demo environment variables
 ENV LANG=en_US.UTF-8 \
 	LANGUAGE=en_US.UTF-8 \
-	LC_ALL=C.UTF-8
+	LC_ALL=C.UTF-8 \
+	PATH=/opt/conda/bin:$PATH
 
 RUN apt-get -qq update && \
     apt-get -y install debian-keyring lsb-release && \

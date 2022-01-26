@@ -12,5 +12,4 @@ Requirements:
   Build:
     - conda-forge::python-decouple
     - requests
-    - pytest-runner
  
