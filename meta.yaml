@@ -1,0 +1,16 @@
+package:
+ name: magnetsetup
+ version: "0.1.0"
+ 
+source:
+ git_url: https://github.com/Trophime/python_magnetsetup
+ 
+build:
+ number: 0
+ 
+Requirements:
+  Build:
+    - conda-forge::python-decouple
+    - requests
+    - pytest-runner
+ 
